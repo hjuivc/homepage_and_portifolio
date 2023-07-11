@@ -1,2 +1,2 @@
-# homepage_and_portifolio
+# Homepage and Portifolio
  
