@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+/* New Header styles */
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to right, #292F36, #536162);
+	z-index: 1000;
+  }
+  
+  nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+  }
+  
+  .nav-btn {
+    background-color: #FFD700; /* Yellow background */
+    color: #292F36; /* Grey text */
+    padding: 10px 30px;
+    border-radius: 25px;  /* Increased for a more rounded appearance */
+    margin: 10px 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+  .nav-btn:hover {
+	transform: scale(1.1);
+  }
+
+  
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
@@ -90,11 +126,38 @@ body {
 	-o-transform: scale(1.1) rotate(360deg);
 	transform: scale(1.1) rotate(360deg);
 }
+
+
+.social-icons svg {
+	font-size: 1.0em !important;
+    line-height: 50px !important; /* Adjust the line height as needed */
+
+}
+
+/* Specific styling for SVG */
+/* Specific styling for SVG */
+.social-icons svg {
+	padding: 10px;  /* 10px padding on all sides */
+	background-color: #ffffff; /* White background color */
+	width: 50px !important;  
+	height: 50px !important;  
+	border-radius: 5px; /* Making it circular */
+	box-sizing: border-box; /* Include padding and border in total width and height */
+	vertical-align: middle; /* Added this for vertical alignment */
+}
+
+  
+  
+  
  
 .social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;} 
 .social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;} 
 .social-icons .fa-stack-overflow{background-color:#FF7300;}
 .social-icons .fa-whatsapp{background-color:#25D366;}
+.social-icons object {
+	background-color: #ffffff; /* White background color */
+  }
+  
 
 
 footer {
