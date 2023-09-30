@@ -3,12 +3,16 @@
 /* New Header styles */
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(to right, #292F36, #536162);
 	z-index: 1000;
+	height: 80px;
+	margin-top: 10px;
   }
   
   nav {
