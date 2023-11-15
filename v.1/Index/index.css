@@ -1,168 +1,197 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 /* New Header styles */
-
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1000;
-	height: 80px;
-	margin-top: 10px;
-  }
-  
-  nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-  }
-  
-  .nav-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 80px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-btn {
     background-color: #FFD700; /* Yellow background */
     color: #292F36; /* Grey text */
     padding: 10px 30px;
-    border-radius: 25px;  /* Increased for a more rounded appearance */
+    border-radius: 25px; /* Increased for a more rounded appearance */
     margin: 10px 10px;
     border: none;
     font-size: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-  
-  .nav-btn:hover {
-	transform: scale(1.1);
-  }
 
-  
+.nav-btn:hover {
+    transform: scale(1.1);
+}
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 30px;
-  color: #FFD700; /* Change to your desired text color */
-  background: linear-gradient(to right, #292F36, #536162); /* Change to your desired background color palette */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden; /* Add this line to remove scroll */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #FFD700; /* Change to your desired text color */
+    background: linear-gradient(to right, #292F36, #536162); /* Change to your desired background color palette */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Add this line to remove scroll */
 }
 
 .text {
-  text-align: center;
-  max-width: 100%;
-  padding: 0 20px; 
-  margin: -10% 0 0 0; 
+    text-align: center;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: -10% 0 0 0;
 }
-
 
 .list-unstyled {
-	padding-left: 0;
-	list-style: none;
+    padding-left: 0;
+    list-style: none;
 }
+
 .list-inline li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 10px;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
 }
 
-/*---- Genral classes end -------*/
-
-
+/* General classes */
 .social-icons {
     display: flex;
     align-items: center;
-  }
+}
 
-/*Change icons size here*/
-.social-icons .fa {
-	font-size: 1.0em;
+.social-icons a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures link color matches the parent */
+}
+
+.social-icons .fa, .social-icons .fab {
+    font-size: 1.0em;
     line-height: 40px; /* Adjust the line height as needed */
-
-}
-/*Change icons circle size and color here*/
-.social-icons .fa {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	color: #FFF;
-	color: rgba(255, 255, 255, 0.8);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+    width: 50px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: flex; /* Ensures contents are centered */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
-.social-icons.icon-circle .fa{ 
-	border-radius: 50%;
-}
-.social-icons.icon-rounded .fa{
-	border-radius:5px;
-}
-.social-icons.icon-flat .fa{
-	border-radius: 0;
+.social-icons .fa svg, .social-icons .fab svg {
+    width: 100%; /* Full width of the parent */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Adjust vertical alignment */
 }
 
-.social-icons .fa:hover, .social-icons .fa:active {
-	color: #FFF;
-	-webkit-box-shadow: 1px 1px 3px #333;
-	-moz-box-shadow: 1px 1px 3px #333;
-	box-shadow: 1px 1px 3px #333; 
-}
-.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
- 	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1); 
-}
-.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active { 
-	-webkit-transform: scale(1.1) rotate(360deg);
-	-moz-transform: scale(1.1) rotate(360deg);
-	-ms-transform: scale(1.1) rotate(360deg);
-	-o-transform: scale(1.1) rotate(360deg);
-	transform: scale(1.1) rotate(360deg);
+.social-icons.icon-circle .fa, .social-icons.icon-circle .fab {
+    border-radius: 50%;
 }
 
+.social-icons.icon-rounded .fa, .social-icons.icon-rounded .fab {
+    border-radius: 5px;
+}
 
-.social-icons svg {
-	font-size: 1.0em !important;
-    line-height: 50px !important; /* Adjust the line height as needed */
+.social-icons.icon-flat .fa, .social-icons.icon-flat .fab {
+    border-radius: 0;
+}
 
+.social-icons .fa:hover, .social-icons .fab:hover, .social-icons .fa:active, .social-icons .fab:active {
+    color: #FFF;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333;
+}
+
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fab:hover, .social-icons.icon-zoom .fa:active, .social-icons.icon-zoom .fab:active {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fab:hover, .social-icons.icon-rotate .fa:active, .social-icons.icon-rotate .fab:active {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
 }
 
 /* Specific styling for SVG */
-/* Specific styling for SVG */
 .social-icons svg {
-	padding: 10px;  /* 10px padding on all sides */
-	background-color: #ffffff; /* White background color */
-	width: 50px !important;  
-	height: 50px !important;  
-	border-radius: 5px; /* Making it circular */
-	box-sizing: border-box; /* Include padding and border in total width and height */
-	vertical-align: middle; /* Added this for vertical alignment */
+    padding: 10px; /* Padding on all sides */
+    background-color: #ffffff; /* White background color */
+    border-radius: 50%; /* Making it circular */
+    box-sizing: border-box; /* Include padding and border in total width and height */
+    vertical-align: middle; /* For vertical alignment */
 }
 
-  
-  
-  
- 
-.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;} 
-.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;} 
-.social-icons .fa-stack-overflow{background-color:#FF7300;}
-.social-icons .fa-whatsapp{background-color:#25D366;}
+#medium_svg {
+    padding: 5px;
+}
+
+.social-icons .fa-github, .social-icons .fa-github-alt, .social-icons .fa-github-square {
+    background-color: #070709;
+}
+
+.social-icons .fa-linkedin, .social-icons .fa-linkedin-square {
+    background-color: #0085AE;
+}
+
+.social-icons .fa-stack-overflow {
+    background-color: #FF7300;
+}
+
+.social-icons .fa-whatsapp {
+    background-color: #25D366;
+}
+
+.social-icons .fa-telegram {
+    color: #2aabee; /* Sets the color of the Telegram icon */
+    background-color: white; /* Prevents any background color */
+}
+
 .social-icons object {
-	background-color: #ffffff; /* White background color */
-  }
-  
+    background-color: #ffffff;
+}
 
+.social-icons .fa-envelope {
+    background-color: #000;
+}
+
+/* Hover and active styles for icons */
+.social-icons .fa:hover, .social-icons .fa:active, .social-icons .fab:hover, .social-icons .fab:active {
+    color: #FFF;
+    background-color: #333; /* Sets background on hover/active */
+    box-shadow: 1px 1px 3px #333;
+}
+
+/* Hover effect specifically for the Element Chat SVG icon */
+.social-icons .fa svg:hover, .social-icons .fa svg:active {
+    fill: #0DBD8B; /* Adjust fill color for hover */
+    background-color: #333; /* Background color on hover */
+    box-shadow: 1px 1px 3px #333; /* Consistent shadow with other icons */
+}
 
 footer {
     display: flex;
@@ -173,4 +202,4 @@ footer {
     left: 0;
     right: 0;
     height: 80px;
-  }
+}
