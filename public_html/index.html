@@ -8,6 +8,7 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
       <link href="index.css" rel="stylesheet" />
+      <script src="https://www.google.com/recaptcha/api.js?render=6LdcshQpAAAAADpV6sJZP0obhQyZ8StDYGOrCYMN"></script>
   </head>
 
   <body>
@@ -16,11 +17,15 @@
       <!-- Top social media icons -->
         <div id="top-social-icons">
           <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-              <li><a href="https://github.com/pxcfbof" title="Checkout my GitHub profile"><i class="fa fa-github"></i></a> </li> 
-              <li><a href="https://www.linkedin.com/in/pxcfbof/" title="Checkout my LinkedIn profile"><i class="fa fa-linkedin"></i></a> </li>   
-              <li><a href="https://stackoverflow.com/users/14511145/pxcfbof" title="Stack Overflow"><i class="fa fa-stack-overflow"></i></a></li>
               <li>
-                <a href="https://medium.com/@pxcfbof" class="social-link" title="Checkout my Medium profile">
+                <a href="#" onclick="onClick(event, 'github', 'https://is.gd/82ju28')" title="Checkout my GitHub profile">
+                  <i class="fa fa-github"></i>
+              </a>                       
+              </li>
+              <li><a href="https://is.gd/7TyBkX" title="Checkout my LinkedIn profile"><i class="fa fa-linkedin"></i></a> </li>   
+              <li><a href="https://is.gd/rHL095" title="Checkout my Stack Overflow profile"><i class="fa fa-stack-overflow"></i></a></li>
+              <li>
+                <a href="https://is.gd/pXwIzn" class="social-link" title="Checkout my Medium profile">
                   <svg class="fa fa-medium" data-name="Layer 1" id="medium_svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
                     <rect height="412.22" rx="55.43" width="412.22" x="49.89" y="49.89"/>
                     <circle cx="197.51" cy="256" fill="#fff" r="77.45"/>
@@ -31,7 +36,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://substack.com/@pxcfbof" title="Checkout my Substack profile">
+                <a href="https://is.gd/QW6T99" title="Checkout my Substack profile">
                   <svg class="fa substack-icon" viewBox="0 0 448 511.471" width="40" height="40">
                     <path fill="#FF681A" d="M0 0h448v62.804H0V0zm0 229.083h448v282.388L223.954 385.808 0 511.471V229.083zm0-114.542h448v62.804H0v-62.804z"></path>
                   </svg>
@@ -44,27 +49,39 @@
     
       <!-- End of header and navbar -->
     <main>
+      <div class="profile-section">
+        <p class="profile-caption">This is me 👨‍💻</p>
+        <img src="pictures/profile_pic.jpg" alt="Profile Picture" class="profile-pic"/>
+      </div>
+
+      <!-- Add a hidden reCAPTCHA container -->
+      <div id="recaptcha-container" style="display: none; margin-top: 20px;">
+        <div class="g-recaptcha" data-sitekey="6LdcshQpAAAAADpV6sJZP0obhQyZ8StDYGOrCYMN"></div>
+        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+      </div>
+
+
       <div class="text"></div>
     </main>
 
     <footer>
       <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
             <li>
-              <a href="https://api.whatsapp.com/send?phone=94888826" title="Contact me on WhatsApp">
+              <a href="https://is.gd/CJgRXM" title="Contact me on WhatsApp">
                 <i class="fa fa-whatsapp">
                 </i>
               </a> 
             </li> 
 
             <li>
-              <a href="https://t.me/pxcfbof" title="Contact me on Telegram">
+              <a href="https://is.gd/8iG8HS" title="Contact me on Telegram">
                 <i class="fa fa-telegram" aria-hidden="true"></i>
               </a>
             </li>
     
 
           <li>
-            <a href="https://signal.me/#p/+4794888826" class="social-link" title="Contact me on Signal">
+            <a href="https://is.gd/nHantG" class="social-link" title="Contact me on Signal">
               <svg class="fa fa-signal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="30" height="30">                <!-- Your SVG elements here -->
                 <path d="M48.64,1.87l1.44,5.82A57.84,57.84,0,0,0,34,14.34L30.92,9.2A63.76,63.76,0,0,1,48.64,1.87Zm30.72,0L77.92,7.69A57.84,57.84,0,0,1,94,14.34l3.1-5.14A63.76,63.76,0,0,0,79.36,1.87ZM9.2,30.92A63.76,63.76,0,0,0,1.87,48.64l5.82,1.44A57.84,57.84,0,0,1,14.34,34ZM6,64a57.9,57.9,0,0,1,.65-8.69l-5.93-.9a64.23,64.23,0,0,0,0,19.18l5.93-.9A57.9,57.9,0,0,1,6,64Zm91.08,54.8L94,113.66a57.84,57.84,0,0,1-16.06,6.65l1.44,5.82A63.76,63.76,0,0,0,97.08,118.8ZM122,64a57.9,57.9,0,0,1-.65,8.69l5.93.9a64.23,64.23,0,0,0,0-19.18l-5.93.9A57.9,57.9,0,0,1,122,64Zm4.13,15.36-5.82-1.44A57.84,57.84,0,0,1,113.66,94l5.14,3.1A63.76,63.76,0,0,0,126.13,79.36Zm-53.44,42a58.41,58.41,0,0,1-17.38,0l-.9,5.93a64.23,64.23,0,0,0,19.18,0Zm38-22.95A58.21,58.21,0,0,1,98.4,110.69l3.56,4.83A64.1,64.1,0,0,0,115.52,102ZM98.4,17.31A58.21,58.21,0,0,1,110.69,29.6L115.52,26A64.1,64.1,0,0,0,102,12.48ZM17.31,29.6A58.21,58.21,0,0,1,29.6,17.31L26,12.48A64.1,64.1,0,0,0,12.48,26ZM118.8,30.92,113.66,34a57.84,57.84,0,0,1,6.65,16.06l5.82-1.44A63.76,63.76,0,0,0,118.8,30.92ZM55.31,6.65a58.41,58.41,0,0,1,17.38,0l.9-5.93a64.23,64.23,0,0,0-19.18,0ZM20.39,117.11,8,120l2.89-12.39-5.84-1.37L2.16,118.63a6,6,0,0,0,7.21,7.21L21.75,123ZM6.3,100.89l5.84,1.36,2-8.59A57.75,57.75,0,0,1,7.69,77.92L1.87,79.36a63.52,63.52,0,0,0,5.9,15.21Zm28,13-8.59,2,1.36,5.84,6.32-1.47a63.52,63.52,0,0,0,15.21,5.9l1.44-5.82A57.75,57.75,0,0,1,34.34,113.85ZM64,12A52,52,0,0,0,20,91.67L15,113l21.33-5A52,52,0,1,0,64,12Z" fill="#3a76f0"/>
               </svg>
@@ -73,7 +90,7 @@
           </li>
 
           <li>
-            <a href="https://matrix.to/#/@pxcfbof:mozilla.org" title="Contact me on Element">
+            <a href="https://is.gd/3J41wm" title="Contact me on Element">
               <i class="fa">
                 <svg width="30" height="30" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4414 3.24C19.4414 1.4506 20.892 0 22.6814 0C34.6108 0 44.2814 9.67065 44.2814 21.6C44.2814 23.3894 42.8308 24.84 41.0414 24.84C39.252 24.84 37.8014 23.3894 37.8014 21.6C37.8014 13.2494 31.032 6.48 22.6814 6.48C20.892 6.48 19.4414 5.0294 19.4414 3.24Z" fill="#0DBD8B"/>
@@ -89,17 +106,16 @@
 
           <!-- Adding email-to link here with existing styling -->
           <li>
-            <a href="mailto:plk8hc42@duck.com" class="social-link" title="Contact me on E-mail">
+            <a href="https://is.gd/okzq6k" class="social-link" title="Contact me on E-mail">
               <i class="fa fa-envelope"></i>
               <span class="overlay"></span>
             </a>
           </li>
       </ul>
     </footer>
-
-
-    
-    
   </body>
+  
   <script src="index.js"></script>
+  <script src="recaptcha.js"></script>
+  
 </html>
