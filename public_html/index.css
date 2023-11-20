@@ -37,6 +37,18 @@ nav {
     transform: scale(1.1);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Align items vertically in the center */
+    height: calc(100vh - 160px); /* Adjust height to account for header and footer */
+    margin-top: 50px; /* Push down from the header */
+}
+
+
+
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
@@ -52,8 +64,27 @@ body {
 .text {
     text-align: center;
     max-width: 100%;
-    padding: 0 20px;
-    margin: -10% 0 0 0;
+    padding: 20px;
+    margin-top: 20px; /* Reduced top margin */
+    min-height: 200px; /* Adjust as needed */
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-caption {
+    font-size: 24px; /* Adjust as needed */
+    margin-bottom: 10px; /* Spacing between caption and image */
+}
+.profile-pic {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Make it square */
+    object-fit: cover; /* This will cover the area without distorting the image */
+    border-radius: 20px; /* Adjust for rounded corners */
+    border: 1px solid #000; /* Thinner black border */
 }
 
 .list-unstyled {
