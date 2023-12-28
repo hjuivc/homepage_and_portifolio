@@ -177,10 +177,6 @@ body {
     vertical-align: middle; /* For vertical alignment */
 }
 
-#medium_svg {
-    padding: 5px;
-}
-
 .social-icons .fa-github, .social-icons .fa-github-alt, .social-icons .fa-github-square {
     background-color: #070709;
 }
@@ -195,11 +191,6 @@ body {
 
 .social-icons .fa-whatsapp {
     background-color: #25D366;
-}
-
-.social-icons .fa-telegram {
-    color: #2aabee; /* Sets the color of the Telegram icon */
-    background-color: white; /* Prevents any background color */
 }
 
 .social-icons object {
