@@ -8,7 +8,6 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
       <link href="index.css" rel="stylesheet" />
-      <script src="https://www.google.com/recaptcha/api.js?render=6LdcshQpAAAAADpV6sJZP0obhQyZ8StDYGOrCYMN"></script>
   </head>
 
   <body>
@@ -18,9 +17,10 @@
         <div id="top-social-icons">
           <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
               <li>
-                <a href="#" onclick="onClick(event, 'github', 'https://is.gd/ZH3BHC')" title="Checkout my GitHub profile">
+                <div class="g-recaptcha" data-sitekey="6LeLveApAAAAAO8mWYZHJmuTPQcwpTc47GUjrbf0"></div>
+                <a href="https://is.gd/ZH3BHC"  title="Checkout my GitHub profile">
                   <i class="fa fa-github"></i>
-              </a>                       
+                </a>                                   
               </li>
               <li><a href="https://is.gd/aWJLTF" title="Checkout my LinkedIn profile"><i class="fa fa-linkedin"></i></a> </li>   
               <li><a href="https://is.gd/I2QrDC" title="Checkout my Stack Overflow profile"><i class="fa fa-stack-overflow"></i></a></li>
@@ -42,13 +42,6 @@
         <p class="profile-caption">This is me 👨‍💻</p>
         <img src="pictures/profile_pic.jpg" alt="Profile Picture" class="profile-pic"/>
       </div>
-
-      <!-- Add a hidden reCAPTCHA container -->
-      <div id="recaptcha-container" style="display: none; margin-top: 20px;">
-        <div class="g-recaptcha" data-sitekey="6LdcshQpAAAAADpV6sJZP0obhQyZ8StDYGOrCYMN"></div>
-        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-      </div>
-
 
       <div class="text"></div>
     </main>
@@ -96,7 +89,7 @@
     </footer>
   </body>
   
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="index.js"></script>
-  <script src="recaptcha.js"></script>
   
 </html>
