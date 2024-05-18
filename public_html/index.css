@@ -50,7 +50,7 @@ main {
 
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 30px;
     color: #FFD700; /* Change to your desired text color */
     background: linear-gradient(to right, #292F36, #536162); /* Change to your desired background color palette */
@@ -79,6 +79,15 @@ body {
     font-size: 24px; /* Adjust as needed */
     margin-bottom: 10px; /* Spacing between caption and image */
 }
+
+.profile-pgp {
+    font-size: 12px; /* Maintain your font size */
+    margin-bottom: 10px; /* Maintain bottom margin */
+    text-align: center; /* Center-align the text */
+    width: 100%; /* Full width to center within flex container */
+}
+
+
 .profile-pic {
     width: 200px; /* Adjust size as needed */
     height: 200px; /* Make it square */
@@ -193,6 +202,11 @@ body {
     background-color: #25D366;
 }
 
+.social-icons .fa-telegram {
+    background-color: #ffffff;
+    color: #2AABEE;
+}
+
 .social-icons object {
     background-color: #ffffff;
 }
@@ -214,6 +228,7 @@ body {
     background-color: #333; /* Background color on hover */
     box-shadow: 1px 1px 3px #333; /* Consistent shadow with other icons */
 }
+
 
 footer {
     display: flex;
