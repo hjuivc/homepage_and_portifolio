@@ -21,22 +21,6 @@ nav {
     margin-top: 20px;
 }
 
-.nav-btn {
-    background-color: #FFD700; /* Yellow background */
-    color: #292F36; /* Grey text */
-    padding: 10px 30px;
-    border-radius: 25px; /* Increased for a more rounded appearance */
-    margin: 10px 10px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.nav-btn:hover {
-    transform: scale(1.1);
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -45,9 +29,6 @@ main {
     height: calc(100vh - 160px); /* Adjust height to account for header and footer */
     margin-top: 50px; /* Push down from the header */
 }
-
-
-
 
 body {
     font-family: 'Roboto Mono', monospace;
@@ -86,7 +67,6 @@ body {
     text-align: center; /* Center-align the text */
     width: 100%; /* Full width to center within flex container */
 }
-
 
 .profile-pic {
     width: 200px; /* Adjust size as needed */
@@ -136,10 +116,21 @@ body {
     border-radius: 50%;
 }
 
-.social-icons .fa svg, .social-icons .fab svg {
-    width: 100%; /* Full width of the parent */
-    height: auto; /* Maintain aspect ratio */
+.social-icons .fa svg, .social-icons .fab svg, .social-icons svg {
+    width: 50px; /* Full width of the parent */
+    height: 50px; /* Maintain aspect ratio */
     vertical-align: middle; /* Adjust vertical alignment */
+}
+
+/* Add rotation effect to the SVG icons */
+.social-icons .fa svg:hover, .social-icons .fab svg:hover, .social-icons svg:hover,
+.social-icons .fa svg:active, .social-icons .fab svg:active, .social-icons svg:active {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+    transition: all 0.3s ease-in-out; /* Ensure smooth rotation */
 }
 
 .social-icons.icon-circle .fa, .social-icons.icon-circle .fab {
@@ -223,11 +214,47 @@ body {
 }
 
 /* Hover effect specifically for the Element Chat SVG icon */
-.social-icons .fa svg:hover, .social-icons .fa svg:active {
+.social-icons .fa-element svg:hover, .social-icons .fa-element svg:active {
     fill: #0DBD8B; /* Adjust fill color for hover */
     background-color: #333; /* Background color on hover */
     box-shadow: 1px 1px 3px #333; /* Consistent shadow with other icons */
 }
+
+/* Hover effect specifically for the Medium SVG icon */
+.social-icons a[href*="mE8uW5"] svg:hover, .social-icons a[href*="mE8uW5"] svg:active {
+    fill: #ffffff; /* Adjust fill color for hover */
+    background-color: #333; /* Background color on hover */
+    box-shadow: 1px 1px 3px #333; /* Consistent shadow with other icons */
+}
+
+/* Specific styling for PGP key SVG */
+.profile-section .fa-gnupg {
+    display: block;
+    margin: 0 auto 10px auto; /* Centering and spacing */
+}
+
+.profile-section .fa-gnupg svg {
+    width: 50px; /* Full width of the parent */
+    height: 50px; /* Maintain aspect ratio */
+    vertical-align: middle; /* Adjust vertical alignment */
+    padding: 10px; /* Padding on all sides */
+    background-color: #ffffff; /* White background color */
+    border-radius: 50%; /* Making it circular */
+    box-sizing: border-box; /* Include padding and border in total width and height */
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-section .fa-gnupg svg:hover, .profile-section .fa-gnupg svg:active {
+    fill: #ffffff; /* Adjust fill color for hover */
+    background-color: #333; /* Background color on hover */
+    box-shadow: 1px 1px 3px #333; /* Consistent shadow with other icons */
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+}
+
 
 
 footer {
